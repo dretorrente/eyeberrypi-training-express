@@ -1,0 +1,40 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(name='description', content='Eye Berry Pi: Gate Security with Implementation of Deep Learning Facial Recognition')
+
+        link(href='/images/favicon.ico', rel='icon', type='image/ico')
+
+        title Eye Berry Pi - SignUp
+
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+
+        link(href='/stylesheets/signup.css', rel='stylesheet')
+    body
+        .login-content
+            .login-head
+                img(src='/images/EyeBerryPiLogoOrange.png')
+            .login-body
+                .login-body-head
+                    h1.login-body-title SignUp to Eye Berry Pi
+                .login-body-form
+                    form.form(action='/auth/register', method='POST')
+                        .form-row
+                            label.fa.fa-user.fa-fw
+                            input.form-control(placeholder='Username', name='username', type='text', value='', autofocus='', required='')
+                        .form-row
+                            label.fa.fa-envelope.fa-fw
+                            input.form-control(placeholder='Email Address', name='email', type='text', value='', autofocus='', required='')
+
+                        .form-row
+                            label.fa.fa-key.fa-fw
+                            input.form-control(placeholder='Password', name='password', type='password', value='', autofocus='', required='')
+
+                        .form-row
+                            label.fa.fa-key.fa-fw
+                            input.form-control(placeholder='Retype your Password', name='password1', type='password', value='', required='')
+                        .form-row
+                            input.btn.btn-primary.btn-lg.btn-block(type='submit', value='SignUp')
